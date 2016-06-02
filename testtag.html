@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test tag</title>
+<script src="https://d2d78xkghdtuh3.cloudfront.net/js/attune-data.js"></script>
+<script>
+T = ATTUNE;
+a = T.data();
+a.siteId = "yZPNMOj";
+a.vistorId = "odb2BwXFXqcBVLguql6WOeg3DSa4oJhE";
+a.customerId = "cae0e98ba0f94adeeab3ebd39718936e";
+a.event = "placed_order";
+a.pageUrl = "https://www.ruelala.com/cart/final";
+a.userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.1 Safari/537.36";
+a.campaign_name = "promo30";
+a.campaign_source = "twitter";
+a.campaign_medium = "social";
+a.campaign_term = "marketing";
+a.campaign_content = "headerlink";
+a.categoryId = "";
+a.subCategoryId = "";
+a.orderId = "4768425";
+a.orderTotal = "621.26";
+a.discount = "0.0";
+a.shipping = "5.99";
+a.currency = "USD";
+a.location_city = "Palo Alto,CA";
+a.location_country = "USA";
+a.productIds = ["23802489","23802517","23802472"];
+a.skuIds = ["103909024","103909027","103908796"];
+a.unitPrices = ["129.99","199.99","119.99"];
+a.quantities = [1,1,2];
+T.send(a);
+// send another event.  always get a new data() object
+b = T.data();
+b.event = "view_product";
+b.siteId = "yZPNMOj";
+b.vistorId = "odb2BwXFXqcBVLguql6WOeg3DSa4oJhE";
+b.customerId = "cae0e98ba0f94adeeab3ebd39718936e";
+b.pageUrl = "https://www.ruelala.com/cart/final";
+b.userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.1 Safari/537.36";
+b.campaign_name = "promo30";
+b.campaign_source = "twitter";
+b.campaign_medium = "social";
+b.campaign_term = "marketing";
+b.campaign_content = "headerlink";
+b.categoryId = "88584";
+b.subCategoryId = "23433135";
+b.location_city = "Palo Alto,CA";
+b.location_country = "USA";
+b.productIds = ["23802489"];
+b.skuIds = ["103909024","103909027","103908796"];
+b.unitPrices = ["129.99"];
+T.send(b);
+</script>
+</head>
+<body>
+<h1>testing</h1>
+</body>
+
+</html>
