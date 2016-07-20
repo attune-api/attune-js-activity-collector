@@ -35,6 +35,7 @@
 		this.pageUrl = "",
 		this.userAgent = "",
 		this.campaign_name = "",
+		this.campaign_id = "",
 		this.campaign_source = "",
 		this.campaign_medium = "",
 		this.campaign_term = "",
@@ -46,6 +47,7 @@
 		this.discount = "0.0",
 		this.shipping = "0.0",
 		this.currency = "USD",
+		this.location_zipcode = "",
 		this.location_city = "",
 		this.location_country = "",
 
