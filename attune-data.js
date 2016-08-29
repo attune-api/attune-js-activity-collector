@@ -25,9 +25,10 @@
 }(this, function() {
 	var Data = function() {
 		this.source = "js-tiq",
-		this.version = "1.0.0",
+		this.version = "1.0.1",
 		this.location = window.location.href,
 		this.clientTime = new Date().valueOf(),
+		this.environment = "",
 		this.siteId = "",
 		this.vistorId = "",
 		this.customerId = "",
@@ -64,14 +65,13 @@
 	},
 	_send = function(data) {
 		json = JSON.stringify(data);
-		console.log(json);
 		if (typeof XDomainRequest === "undefined") {
 			var xhr = new XMLHttpRequest();
 			xhr.open(_method, _endpoint, true);
 			xhr.onreadystatechange = function(e) {
 				if (xhr.readyState === 4) {
 					if (xhr.status === 200) {
-						console.log(xhr.responseText);
+						// console.log(xhr.responseText);
 					} else {
 						if (xhr.status === 410) {
 							console.error("Version no longer supported");

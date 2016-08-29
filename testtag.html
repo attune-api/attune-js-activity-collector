@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Test tag</title>
-<script src="https://d2d78xkghdtuh3.cloudfront.net/js/attune-data.js"></script>
+<!-- script src="https://d2d78xkghdtuh3.cloudfront.net/js/attune-data.js"></script -->
+<script src="./attune-data.js"></script>
 <script>
 T = ATTUNE;
 a = T.data();
+a.environment = "dev";
 a.siteId = "yZPNMOj";
 a.vistorId = "odb2BwXFXqcBVLguql6WOeg3DSa4oJhE";
 a.customerId = "cae0e98ba0f94adeeab3ebd39718936e";
@@ -18,8 +20,8 @@ a.campaign_source = "twitter";
 a.campaign_medium = "social";
 a.campaign_term = "marketing";
 a.campaign_content = "headerlink";
-a.categoryId = "";
-a.subCategoryId = "";
+a.categoryId = "Dress & Skirt";
+a.subCategoryId = "Maxi";
 a.orderId = "4768425";
 a.orderTotal = "621.26";
 a.discount = "0.0";
